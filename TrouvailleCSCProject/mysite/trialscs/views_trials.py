@@ -25,7 +25,7 @@ The Trouvaille Account Team.
 '''
 conn=sqlite3.connect('userdetails.sqlite3',check_same_thread=False)
 cur=conn.cursor()
-conn1=m.connect(host='localhost',user='root',password='chinju97',database='flightstorage')
+conn1=m.connect(host='localhost',user='root',password='',database='flightstorage')
 cur1=conn1.cursor()
 def regTableMySql():
     cur1.execute('''
@@ -140,7 +140,7 @@ def flightsresults(request):
                        'convert_currency': str(convert_currency), 'cabin_class': str(cabinclass).lower()}
         headers = {
             'x-rapidapi-host': "priceline-com-provider.p.rapidapi.com",
-            'x-rapidapi-key': "b5e745bc4bmsh64d83593ab94886p117e88jsn9e769946e56d"
+            'x-rapidapi-key': ""
         }
         global data
         response = requests.get(url, headers=headers, params=querystring)
