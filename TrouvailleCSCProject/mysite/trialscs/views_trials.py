@@ -140,7 +140,7 @@ def flightsresults(request):
                        'convert_currency': str(convert_currency), 'cabin_class': str(cabinclass).lower()}
         headers = {
             'x-rapidapi-host': "priceline-com-provider.p.rapidapi.com",
-            'x-rapidapi-key': "_add_your_rapidapi_key"
+            'x-rapidapi-key': "b5e745bc4bmsh64d83593ab94886p117e88jsn9e769946e56d"
         }
         global data
         response = requests.get(url, headers=headers, params=querystring)
